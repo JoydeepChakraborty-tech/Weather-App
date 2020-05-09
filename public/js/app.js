@@ -1,6 +1,5 @@
 const weatherForm   =   document.querySelector('form')
 const search        =   document.querySelector('input')
-
 const messageOne    =   document.querySelector('#msgOne')
 const messageTwo    =   document.querySelector('#msgTwo')  
 const messageThree  =   document.querySelector('#msgThree') 
@@ -22,11 +21,8 @@ weatherForm.addEventListener('submit',(e)=>{
             messageTwo.textContent      =   "It is Currently "+data.temperature+"degrees Outside,It feels Like "+data.feelsLike+" degrees"
             messageThree.textContent    =  "Forecast :"+data.forecast    
             document.getElementById("imageOne").src = data.forecastImage
-            
         }
         
     })
 })  
 })
-
-
