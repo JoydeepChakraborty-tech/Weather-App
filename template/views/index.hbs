@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Weather
+        </title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel='stylesheet' href='/css/styles.css'> 
+    </head>
+    <body onload="startTime()">
+        <div class="main-content">
+            {{>header}}
+            <div id="today" class="clock"></div>
+            <br>
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+                <p id="msgOne"></p>
+                <p id="msgTwo"></p>
+                <p id="msgThree"> </p><img id="imageOne">
+               
+            </form>
+        </div>
+        
+        {{>footer}}
+     <script src="/js/app.js"></script>
+     <script src="/js/digiclock.js"></script>
+    </body>
+</html>
